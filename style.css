@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    font-family: 'Saira Extra Condensed', sans-serif;
+
+}
+
+
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: #1971f6;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar{
+    text-align: center;
+}
+
+.img-sidebar img {
+    width: 80%;
+    border-radius: 50%;
+    border: 8px solid #6951ee;
+}
+
+.menu{
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu a{
+    color: white;
+    opacity: 0.4;
+    font-size: 19px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.menu a.selected:hover{
+    opacity: 1;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height:100%;
+    overflow: auto;
+    padding: 0% 3%;
+}
+
+section.descricao{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+section.descricao h2{
+    color: #343a40;
+    font-size: 46px;
+}
+
+section.descricao h2 > span, 
+section.descricao h3 > span{
+    color: #1874f3;
+}
+
+section.descricao h3{
+    margin: 15px 0;
+    color: #6c757d;
+    font-size: 26px;
+}
+
+section.descricao p{
+    color: #6c757d;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.icons-social{
+    margin-top: 20px;
+}
+
+.icons-social a{
+    text-decoration: none;
+    color: white;
+    background-color: #6c757d;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+.icons-social a:hover{
+    background-color:#1874f3;
+    color: var(--havy-magenta);
+    border-color: var(--havy-magenta);
+    pointer-events: painted;
+    transition: 0.5s ease-out
+}
+.icons-social  i{
+    line-height: 40px;
+}
+#email{
+text-decoration: none;
+color: #1874f3
+
+}
+
+#email:hover{
+    color: #6c757d;
+    transition: 0.5s ease-out;
+    
+}
